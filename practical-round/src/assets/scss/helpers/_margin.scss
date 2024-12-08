@@ -1,0 +1,145 @@
+@import "../variables";
+@import "../mixins/breakpoints";
+// margin
+$margins: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100;
+@each $margin in $margins {
+    .#{$class-prefix}m-#{$margin} {
+        margin: $margin + px !important;
+    }
+    .#{$class-prefix}mt-#{$margin} {
+        margin-top: $margin + px !important;
+    }
+    .#{$class-prefix}mr-#{$margin} {
+        margin-right: $margin + px !important;
+    }
+    .#{$class-prefix}mb-#{$margin} {
+        margin-bottom: $margin + px !important;
+    }
+    .#{$class-prefix}ml-#{$margin} {
+        margin-left: $margin + px !important;
+    }
+    .#{$class-prefix}mx-#{$margin} {
+        margin-left: $margin + px !important;
+        margin-right: $margin + px !important;
+    }
+    .#{$class-prefix}my-#{$margin} {
+        margin-top: $margin + px !important;
+        margin-bottom: $margin + px !important;
+    }
+}
+
+// 576 px above - sm
+@media (min-width: $grid-breakpoints-sm) {
+    @each $margin in $margins {
+        .#{$class-prefix}m-sm-#{$margin} {
+            margin: $margin + px !important;
+        }
+        .#{$class-prefix}mt-sm-#{$margin} {
+            margin-top: $margin + px !important;
+        }
+        .#{$class-prefix}mr-sm-#{$margin} {
+            margin-right: $margin + px !important;
+        }
+        .#{$class-prefix}mb-sm-#{$margin} {
+            margin-bottom: $margin + px !important;
+        }
+        .#{$class-prefix}ml-sm-#{$margin} {
+            margin-left: $margin + px !important;
+        }
+        .#{$class-prefix}mx-sm-#{$margin} {
+            margin-left: $margin + px !important;
+            margin-right: $margin + px !important;
+        }
+        .#{$class-prefix}my-sm-#{$margin} {
+            margin-top: $margin + px !important;
+            margin-bottom: $margin + px !important;
+        }
+    }
+}
+
+// 768 px above - md
+@media (min-width: $grid-breakpoints-md) {
+    @each $margin in $margins {
+        .#{$class-prefix}m-md-#{$margin} {
+            margin: $margin + px !important;
+        }
+        .#{$class-prefix}mt-md-#{$margin} {
+            margin-top: $margin + px !important;
+        }
+        .#{$class-prefix}mr-md-#{$margin} {
+            margin-right: $margin + px !important;
+        }
+        .#{$class-prefix}mb-md-#{$margin} {
+            margin-bottom: $margin + px !important;
+        }
+        .#{$class-prefix}ml-md-#{$margin} {
+            margin-left: $margin + px !important;
+        }
+        .#{$class-prefix}mx-md-#{$margin} {
+            margin-left: $margin + px !important;
+            margin-right: $margin + px !important;
+        }
+        .#{$class-prefix}my-md-#{$margin} {
+            margin-top: $margin + px !important;
+            margin-bottom: $margin + px !important;
+        }
+    }
+}
+
+// 992 px above - lg
+@media (min-width: $grid-breakpoints-lg) {
+    @each $margin in $margins {
+        .#{$class-prefix}m-lg-#{$margin} {
+            margin: $margin + px !important;
+        }
+        .#{$class-prefix}mt-lg-#{$margin} {
+            margin-top: $margin + px !important;
+        }
+        .#{$class-prefix}mr-lg-#{$margin} {
+            margin-right: $margin + px !important;
+        }
+        .#{$class-prefix}mb-lg-#{$margin} {
+            margin-bottom: $margin + px !important;
+        }
+        .#{$class-prefix}ml-lg-#{$margin} {
+            margin-left: $margin + px !important;
+        }
+        .#{$class-prefix}mx-lg-#{$margin} {
+            margin-left: $margin + px !important;
+            margin-right: $margin + px !important;
+        }
+        .#{$class-prefix}my-lg-#{$margin} {
+            margin-top: $margin + px !important;
+            margin-bottom: $margin + px !important;
+        }
+    }
+}
+
+// 1200 px above - xl
+@media (min-width: $grid-breakpoints-xl) {
+    @each $margin in $margins {
+        .#{$class-prefix}m-xl-#{$margin} {
+            margin: $margin + px !important;
+        }
+        .#{$class-prefix}mt-xl-#{$margin} {
+            margin-top: $margin + px !important;
+        }
+        .#{$class-prefix}mr-xl-#{$margin} {
+            margin-right: $margin + px !important;
+        }
+        .#{$class-prefix}mb-xl-#{$margin} {
+            margin-bottom: $margin + px !important;
+        }
+        .#{$class-prefix}ml-xl-#{$margin} {
+            margin-left: $margin + px !important;
+        }
+        .#{$class-prefix}mx-xl-#{$margin} {
+            margin-left: $margin + px !important;
+            margin-right: $margin + px !important;
+        }
+        .#{$class-prefix}my-xl-#{$margin} {
+            margin-top: $margin + px !important;
+            margin-bottom: $margin + px !important;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import "../variables";
+@import "../mixins";
+.#{$class-prefix}link-blue{
+    color: var(--wp-theme-light-blue) !important;
+    text-underline-offset:0.45em !important;
+    &:hover, &:focus{
+        color: var(--wp-theme-blue) !important;
+    }
+}
+.#{$class-prefix}link-white-yellow{
+    color: #fff;
+    text-decoration: none;
+    &:hover, &:focus{
+        color: var(--wp-theme-yellow) !important;
+        text-decoration: none;
+    }
+}
+.#{$class-prefix}link-none{
+    color: var(--wp-theme-light-blue) !important;
+    text-decoration: none;
+    &:hover, &:focus{       
+        color: var(--wp-theme-light-blue);
+        text-decoration: none;
+    }
+}

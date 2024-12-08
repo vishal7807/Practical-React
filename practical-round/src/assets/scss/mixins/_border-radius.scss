@@ -1,0 +1,45 @@
+@use "sass:list";
+@use "sass:math";
+
+// avatar
+@mixin avatar($size, $circle: false) {
+    width: $size;
+    height: $size;
+    @if $circle {
+        border-radius: calc(#{$size} / 2);
+        -webkit-border-radius: calc(#{$size} / 2);
+        -moz-border-radius: calc(#{$size} / 2);
+        // border-radius: list.slash($size, 2);
+    }
+}
+
+// border radius
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+@mixin border-top-left-radius($radius) {
+    border-top-left-radius: $radius;
+    -webkit-border-top-left-radius: $radius;
+    -moz-border-top-left-radius: $radius;
+}
+
+@mixin border-top-right-radius($radius) {
+    border-top-right-radius: $radius;
+    -webkit-border-top-right-radius: $radius;
+    -moz-border-top-right-radius: $radius;
+}
+
+@mixin border-bottom-left-radius($radius) {
+    border-bottom-left-radius: $radius;
+    -webkit-border-bottom-left-radius: $radius;
+    -moz-border-bottom-left-radius: $radius;
+}
+
+@mixin border-bottom-right-radius($radius) {
+    border-bottom-right-radius: $radius;
+    -webkit-border-bottom-right-radius: $radius;
+    -moz-border-bottom-right-radius: $radius;
+}

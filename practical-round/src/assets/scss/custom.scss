@@ -1,0 +1,129 @@
+@import "mixins";
+@import "variables";
+
+// header css
+.wpHeader {
+    .wpHeaderMenu {
+        .nav-link {
+            color: #fff;
+            font-family: var(--wp-font-dm-m);
+            font-size: 18px;
+            padding-left: 12px;
+            padding-right: 12px;
+            @media (min-width: $grid-breakpoints-lg) {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+        .dropdown-toggle {
+            &.nav-link {
+                display: flex;
+                align-items: center;
+                &:after {
+                    content: "\F282";
+                    font-family: bootstrap-icons !important;
+                    border: 0;
+                }
+            }
+        }
+        .dropdown-menu {
+            .dropdown-item {
+                &:hover,
+                &:active {
+                    background-color: var(--wp-theme-dark-blue);
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .navbar-toggler {
+        color: #fff;
+        border-color: #fff;
+        .navbar-toggler-icon {
+            filter: brightness(9);
+        }
+    }
+    @media (max-width:992px) {
+        .navbar-collapse{
+            // &.show{
+                padding: 20px;
+                background: rgba(255, 255, 255, 0.11);
+                border-radius: 10px;
+                margin-top: 20px;
+            // }
+        }
+    }
+    
+}
+
+// choose your plan
+.planSlickSlider {
+    &.slick-initialized {
+        .slick-list {
+            padding: 60px 0 !important;
+        }
+        .slick-center {
+            scale: 1.1;
+            .planBox {
+                border-color: var(--wp-theme-dark-blue);
+                background-color: var(--wp-theme-dark-blue);
+                color: #fff;
+                .planPrice,
+                .planIcCheck {
+                    color: var(--wp-theme-yellow);
+                }
+                .wp-btn-outline-yellow {
+                    border-color: var(--wp-theme-light-blue);
+                    background-color: var(--wp-theme-light-blue);
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .slick-dots {
+        bottom: -75px;
+        li {
+            &.slick-active {
+                button {
+                    &::before {
+                        background-color: var(--wp-theme-dark-blue);
+                    }
+                }
+            }
+            button {
+                width: auto;
+                height: auto;
+                &::before {
+                    opacity: 0.9;
+                    width: 12px;
+                    height: 12px;
+                    content: "";
+                    background-color: var(--wp-theme-light-blue);
+                    @include border-radius(50px);
+                }
+            }
+        }
+    }
+}
+.planBox {
+    border: 1px solid var(--wp-theme-yellow);
+    @include border-radius(10px);
+    position: relative;
+    &:hover {
+        border-color: var(--wp-theme-dark-blue);
+        background-color: var(--wp-theme-dark-blue);
+        color: #fff;
+        .planPrice,
+        .planIcCheck {
+            color: var(--wp-theme-yellow);
+        }
+    }
+}
+.tryWhToday {
+    img {
+        width: 35px;
+        @media (min-width: $grid-breakpoints-sm) {
+            width: 60px;
+        }
+    }
+}
