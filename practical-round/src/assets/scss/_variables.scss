@@ -1,0 +1,40 @@
+// scss-docs-start color-variables
+$theme-text:#212529 !default;
+$theme-yellow:#FFE492 !default;
+$theme-dark-blue:#043873 !default;
+$theme-light-blue:#4F9CF9 !default;
+
+
+/** dm sans:  font variable **/
+$font-dm-r: "DMSans-Regular";
+$font-dm-m: "DMSans-Medium";
+$font-dm-sm: "DMSans-SemiBold";
+$font-dm-b: "DMSans-Bold";
+
+/** inter:  font variable **/
+$font-inter-r: "Inter-Regular";
+$font-inter-m: "Inter-Medium";
+$font-inter-sm: "Inter-SemiBold";
+$font-inter-b: "Inter-Bold";
+
+
+$colors: (
+    "theme-text": $theme-text,
+    "theme-yellow": $theme-yellow,
+    "theme-dark-blue": $theme-dark-blue,
+    "theme-light-blue": $theme-light-blue,
+) !default;
+$fonts: (
+    "font-dm-r":$font-dm-r,
+    "font-dm-m":$font-dm-m,
+    "font-dm-sm":$font-dm-sm,
+    "font-dm-b":$font-dm-b,
+
+    "font-inter-r":$font-inter-r,
+    "font-inter-m":$font-inter-m,
+    "font-inter-sm":$font-inter-sm,
+    "font-inter-b":$font-inter-b,
+) !default;
+
+$variable-prefix: wp- !default;
+$class-prefix: wp- !default;

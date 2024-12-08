@@ -1,0 +1,207 @@
+@import "../variables";
+@import "../mixins/breakpoints";
+// all width
+$widths: auto,10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100;
+@each $width in $widths {
+    .#{$class-prefix}mw-#{$width} {
+        @if ($width==auto) {
+            max-width: #{$width} !important;
+        }
+        @else {
+            max-width: #{$width}#{"%"} !important;
+        }
+    }
+    .#{$class-prefix}w-#{$width} {
+        @if ($width==auto) {
+            width: #{$width} !important;
+        } @else {
+            width: #{$width}#{"%"} !important;
+        }
+    }
+}
+
+// 576 px above - sm
+@media (min-width: $grid-breakpoints-sm) {
+    @each $width in $widths {
+        .#{$class-prefix}mw-sm-#{$width} {
+            @if ($width==auto) {
+                max-width: #{$width} !important;
+            }
+            @else {
+                max-width: #{$width}#{"%"} !important;
+            }
+        }
+        .#{$class-prefix}w-sm-#{$width} {
+            @if ($width==auto) {
+                width: #{$width} !important;
+            } @else {
+                width: #{$width}#{"%"} !important;
+            }
+        }
+    }
+}
+
+// 768 px above - md
+@media (min-width: $grid-breakpoints-md) {
+    @each $width in $widths {
+        .#{$class-prefix}mw-md-#{$width} {
+            @if ($width==auto) {
+                max-width: #{$width} !important;
+            }
+            @else {
+                max-width: #{$width}#{"%"} !important;
+            }
+        }
+        .#{$class-prefix}w-md-#{$width} {
+            @if ($width==auto) {
+                width: #{$width} !important;
+            } @else {
+                width: #{$width}#{"%"} !important;
+            }
+        }
+    }
+}
+// 992 px above - lg
+@media (min-width: $grid-breakpoints-lg) {
+    @each $width in $widths {
+        .#{$class-prefix}mw-lg-#{$width} {
+            @if ($width==auto) {
+                max-width: #{$width} !important;
+            }
+            @else {
+                max-width: #{$width}#{"%"} !important;
+            }
+        }
+        .#{$class-prefix}w-lg-#{$width} {
+            @if ($width==auto) {
+                width: #{$width} !important;
+            } @else {
+                width: #{$width}#{"%"} !important;
+            }
+        }
+    }
+}
+// 1200 px above - xl
+@media (min-width: $grid-breakpoints-xl) {
+    @each $width in $widths {
+        .#{$class-prefix}mw-xl-#{$width} {
+            @if ($width==auto) {
+                max-width: #{$width} !important;
+            }
+            @else {
+                max-width: #{$width}#{"%"} !important;
+            }
+        }
+        .#{$class-prefix}w-xl-#{$width} {
+            @if ($width==auto) {
+                width: #{$width} !important;
+            } @else {
+                width: #{$width}#{"%"} !important;
+            }
+        }
+    }
+}
+
+// all height
+$heights: auto, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100;
+@each $height in $heights {
+    .#{$class-prefix}mh-#{$height} {
+        @if ($height==auto) {
+            max-height: #{$height} !important;
+        }
+        @else {
+            max-height: #{$height}#{"%"} !important;
+        }
+    }
+    .#{$class-prefix}h-#{$height} {
+        @if ($height==auto) {
+            height: #{$height} !important;
+        } @else {
+            height: #{$height}#{"%"} !important;
+        }
+    }
+}
+
+// 576 px above -sm
+@media (min-width: $grid-breakpoints-sm) {
+    @each $height in $heights {
+        .#{$class-prefix}mh-sm-#{$height} {
+            @if ($height==auto) {
+                max-height: #{$height} !important;
+            }
+            @else {
+                max-height: #{$height}#{"%"} !important;
+            }
+        }
+        .#{$class-prefix}h-sm-#{$height} {
+            @if ($height==auto) {
+                height: #{$height} !important;
+            } @else {
+                height: #{$height}#{"%"} !important;
+            }
+        }
+    }
+}
+
+// 768 px above - md
+@media (min-width: $grid-breakpoints-md) {
+    @each $height in $heights {
+        .#{$class-prefix}mh-md-#{$height} {
+            @if ($height==auto) {
+                max-height: #{$height} !important;
+            }
+            @else {
+                max-height: #{$height}#{"%"} !important;
+            }
+        }
+        .#{$class-prefix}h-md-#{$height} {
+            @if ($height==auto) {
+                height: #{$height} !important;
+            } @else {
+                height: #{$height}#{"%"} !important;
+            }
+        }
+    }
+}
+
+// 992 px above - lg
+@media (min-width: $grid-breakpoints-md) {
+    @each $height in $heights {
+        .#{$class-prefix}mh-lg-#{$height} {
+            @if ($height==auto) {
+                max-height: #{$height} !important;
+            }
+            @else {
+                max-height: #{$height}#{"%"} !important;
+            }
+        }
+        .#{$class-prefix}h-lg-#{$height} {
+            @if ($height==auto) {
+                height: #{$height} !important;
+            } @else {
+                height: #{$height}#{"%"} !important;
+            }
+        }
+    }
+}
+
+// 1200 px above - xl
+@media (min-width: $grid-breakpoints-xl) {
+    @each $height in $heights {
+        .#{$class-prefix}mh-xl-#{$height} {
+            @if ($height==auto) {
+                max-height: #{$height} !important;
+            }
+            @else {
+                max-height: #{$height}#{"%"} !important;
+            }
+        }
+        .#{$class-prefix}h-xl-#{$height} {
+            @if ($height==auto) {
+                height: #{$height} !important;
+            } @else {
+                height: #{$height}#{"%"} !important;
+            }
+        }
+    }
+}

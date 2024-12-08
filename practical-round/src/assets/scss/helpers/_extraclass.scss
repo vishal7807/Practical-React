@@ -1,0 +1,172 @@
+@use "sass:string";
+@import "../variables";
+@import "../mixins/breakpoints";
+.#{$class-prefix}text-dark {
+    color: var(--wp-theme-text) !important;
+}
+
+/** background color **/
+.#{$class-prefix}bg-dark-blue {
+    background-color: var(--wp-theme-dark-blue) !important;
+}
+
+/** font class: DMSans **/
+.#{$class-prefix}font-dm-r {
+    font-family: var(--wp-font-dm-r) !important;
+}
+.#{$class-prefix}font-dm-m {
+    font-family: var(--wp-font-dm-m) !important;
+}
+.#{$class-prefix}font-dm-sm {
+    font-family: var(--wp-font-dm-sm) !important;
+}
+.#{$class-prefix}font-dm-b {
+    font-family: var(--wp-font-dm-b) !important;
+}
+
+/** font class: Inter **/
+.#{$class-prefix}font-r {
+    font-family: var(--wp-font-inter-r) !important;
+}
+.#{$class-prefix}font-m {
+    font-family: var(--wp-font-inter-m) !important;
+}
+.#{$class-prefix}font-sm {
+    font-family: var(--wp-font-inter-sm) !important;
+}
+.#{$class-prefix}font-b {
+    font-family: var(--wp-font-inter-b) !important;
+}
+
+// z index class
+$zIndexs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25; // z index 1 to 25...
+@each $zIndex in $zIndexs {
+    .#{$class-prefix}zindex-#{$zIndex} {
+        z-index: $zIndex !important;
+    }
+}
+
+// opacity class
+$opacitys: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95;
+@each $opacity in $opacitys {
+    .#{$class-prefix}opacity-#{$opacity} {
+        opacity: #{"0."}#{$opacity} !important;
+    }
+}
+
+// gap class
+$gaps: 0, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100;
+@each $gap in $gaps {
+    .#{$class-prefix}gap-#{$gap} {
+        gap: $gap + px !important;
+    }
+}
+
+// absolute class
+.#{$class-prefix}l-0 {
+    left: 0 !important;
+}
+.#{$class-prefix}r-0 {
+    right: 0 !important;
+}
+.#{$class-prefix}t-0 {
+    top: 0 !important;
+}
+.#{$class-prefix}b-0 {
+    bottom: 0 !important;
+}
+
+// text align class
+$textaligns: start, center, end; // z index 1 to 25...
+@each $textalign in $textaligns {
+    .#{$class-prefix}text-#{$textalign} {
+        @if ($textalign==start) {
+            text-align: left !important;
+        } @else if($textalign==end) {
+            text-align: right !important;
+        } @else {
+            text-align: $textalign !important;
+        }
+    }
+}
+
+// 576 px above -sm
+@media (min-width: $grid-breakpoints-sm) {
+    @each $textalign in $textaligns {
+        .#{$class-prefix}text-sm-#{$textalign} {
+            @if ($textalign==start) {
+                text-align: left !important;
+            } @else if($textalign==end) {
+                text-align: right !important;
+            } @else {
+                text-align: $textalign !important;
+            }
+        }
+    }
+    // gaps loop
+    @each $gap in $gaps {
+        .#{$class-prefix}gap-sm-#{$gap} {
+            gap: $gap + px !important;
+        }
+    }
+}
+// 768 px above - md
+@media (min-width: $grid-breakpoints-md) {
+    @each $textalign in $textaligns {
+        .#{$class-prefix}text-md-#{$textalign} {
+            @if ($textalign==start) {
+                text-align: left !important;
+            } @else if($textalign==end) {
+                text-align: right !important;
+            } @else {
+                text-align: $textalign !important;
+            }
+        }
+    }
+    // gaps loop
+    @each $gap in $gaps {
+        .#{$class-prefix}gap-md-#{$gap} {
+            gap: $gap + px !important;
+        }
+    }
+}
+// 992 px above - lg
+@media (min-width: $grid-breakpoints-lg) {
+    @each $textalign in $textaligns {
+        .#{$class-prefix}text-lg-#{$textalign} {
+            @if ($textalign==start) {
+                text-align: left !important;
+            } @else if($textalign==end) {
+                text-align: right !important;
+            } @else {
+                text-align: $textalign !important;
+            }
+        }
+    }
+      // gaps loop
+      @each $gap in $gaps {
+        .#{$class-prefix}gap-lg-#{$gap} {
+            gap: $gap + px !important;
+        }
+    } 
+}
+// 1200 px above - xl
+@media (min-width: $grid-breakpoints-xl) {
+    @each $textalign in $textaligns {
+        .#{$class-prefix}text-xl-#{$textalign} {
+            @if ($textalign==start) {
+                text-align: left !important;
+            } @else if($textalign==end) {
+                text-align: right !important;
+            } @else {
+                text-align: $textalign !important;
+            }
+        }
+    }
+      // gaps loop
+      @each $gap in $gaps {
+        .#{$class-prefix}gap-xl-#{$gap} {
+            gap: $gap + px !important;
+        }
+    } 
+}

@@ -1,0 +1,59 @@
+/* tippy tooltip, popover */
+.tippy-box[data-theme~="whitePopup"] {
+    color: var(--sf-theme-dark);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.tippy-box[data-theme~="whitePopup"] .tippy-arrow {
+    color: #fff;
+}
+
+.tippy-box[data-theme~="whitePopup"][data-placement^=left]>.tippy-arrow:after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    border-color: transparent;
+    border-width: 8px 0px 8px 8px;
+    border-left-color: #ddd;
+    transform-origin: center right;
+    border-style: solid;
+    z-index: -1;
+}
+
+.tippy-box[data-theme~="whitePopup"][data-placement^=right]>.tippy-arrow:after {
+    content: "";
+    position: absolute;
+    left: -8px;
+    border-color: transparent;
+    border-width: 8px 8px 8px 0px;
+    border-right-color: #ddd;
+    transform-origin: center right;
+    border-style: solid;
+    z-index: -1;
+}
+
+.tippy-box[data-theme~="whitePopup"][data-placement^=top]>.tippy-arrow:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    border-color: transparent;
+    border-width: 8px 8px 0px;
+    border-top-color: #ddd;
+    transform-origin: center right;
+    border-style: solid;
+    z-index: -1;
+}
+
+.tippy-box[data-theme~="whitePopup"][data-placement^=bottom]>.tippy-arrow:after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    border-color: transparent;
+    border-width: 0px 8px 8px;
+    border-bottom-color: #ddd;
+    transform-origin: center right;
+    border-style: solid;
+    z-index: -1;
+}

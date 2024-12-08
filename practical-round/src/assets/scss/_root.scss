@@ -1,0 +1,10 @@
+:root {
+    // Custom variable values only support SassScript inside `#{}`.
+    @each $color, $value in $colors {
+        --#{$variable-prefix}#{$color}: #{$value};
+    }
+    // fonts variable
+    @each $font, $value in $fonts {
+        --#{$variable-prefix}#{$font}: #{$value};
+    }
+}

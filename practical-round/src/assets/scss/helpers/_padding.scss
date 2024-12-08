@@ -1,0 +1,144 @@
+@import "../mixins/breakpoints";
+// padding
+$paddings: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110,115, 120,125, 130,135, 140,145, 150, 155, 160, 165, 170,175,180,185,190,195,200;
+@each $padding in $paddings {
+    .#{$class-prefix}p-#{$padding} {
+        padding: $padding + px !important;
+    }
+    .#{$class-prefix}pt-#{$padding} {
+        padding-top: $padding + px !important;
+    }
+    .#{$class-prefix}pr-#{$padding} {
+        padding-right: $padding + px !important;
+    }
+    .#{$class-prefix}pb-#{$padding} {
+        padding-bottom: $padding + px !important;
+    }
+    .#{$class-prefix}pl-#{$padding} {
+        padding-left: $padding + px !important;
+    }
+    .#{$class-prefix}px-#{$padding} {
+        padding-left: $padding + px !important;
+        padding-right: $padding + px !important;
+    }
+    .#{$class-prefix}py-#{$padding} {
+        padding-top: $padding + px !important;
+        padding-bottom: $padding + px !important;
+    }
+}
+
+// 576 px above - sm
+@media (min-width: $grid-breakpoints-sm) {
+    @each $padding in $paddings {
+        .#{$class-prefix}p-sm-#{$padding} {
+            padding: $padding + px !important;
+        }
+        .#{$class-prefix}pt-sm-#{$padding} {
+            padding-top: $padding + px !important;
+        }
+        .#{$class-prefix}pr-sm-#{$padding} {
+            padding-right: $padding + px !important;
+        }
+        .#{$class-prefix}pb-sm-#{$padding} {
+            padding-bottom: $padding + px !important;
+        }
+        .#{$class-prefix}pl-sm-#{$padding} {
+            padding-left: $padding + px !important;
+        }
+        .#{$class-prefix}px-sm-#{$padding} {
+            padding-left: $padding + px !important;
+            padding-right: $padding + px !important;
+        }
+        .#{$class-prefix}py-sm-#{$padding} {
+            padding-top: $padding + px !important;
+            padding-bottom: $padding + px !important;
+        }
+    }
+}
+
+// 768 px above - md
+@media (min-width: $grid-breakpoints-md) {
+    @each $padding in $paddings {
+        .#{$class-prefix}p-md-#{$padding} {
+            padding: $padding + px !important;
+        }
+        .#{$class-prefix}pt-md-#{$padding} {
+            padding-top: $padding + px !important;
+        }
+        .#{$class-prefix}pr-md-#{$padding} {
+            padding-right: $padding + px !important;
+        }
+        .#{$class-prefix}pb-md-#{$padding} {
+            padding-bottom: $padding + px !important;
+        }
+        .#{$class-prefix}pl-md-#{$padding} {
+            padding-left: $padding + px !important;
+        }
+        .#{$class-prefix}px-md-#{$padding} {
+            padding-left: $padding + px !important;
+            padding-right: $padding + px !important;
+        }
+        .#{$class-prefix}py-md-#{$padding} {
+            padding-top: $padding + px !important;
+            padding-bottom: $padding + px !important;
+        }
+    }
+}
+
+// 992 px above - lg
+@media (min-width: $grid-breakpoints-lg) {
+    @each $padding in $paddings {
+        .#{$class-prefix}p-lg-#{$padding} {
+            padding: $padding + px !important;
+        }
+        .#{$class-prefix}pt-lg-#{$padding} {
+            padding-top: $padding + px !important;
+        }
+        .#{$class-prefix}pr-lg-#{$padding} {
+            padding-right: $padding + px !important;
+        }
+        .#{$class-prefix}pb-lg-#{$padding} {
+            padding-bottom: $padding + px !important;
+        }
+        .#{$class-prefix}pl-lg-#{$padding} {
+            padding-left: $padding + px !important;
+        }
+        .#{$class-prefix}px-lg-#{$padding} {
+            padding-left: $padding + px !important;
+            padding-right: $padding + px !important;
+        }
+        .#{$class-prefix}py-lg-#{$padding} {
+            padding-top: $padding + px !important;
+            padding-bottom: $padding + px !important;
+        }
+    }
+}
+
+// 992 px above - xl
+@media (min-width: $grid-breakpoints-xl) {
+    @each $padding in $paddings {
+        .#{$class-prefix}p-xl-#{$padding} {
+            padding: $padding + px !important;
+        }
+        .#{$class-prefix}pt-xl-#{$padding} {
+            padding-top: $padding + px !important;
+        }
+        .#{$class-prefix}pr-xl-#{$padding} {
+            padding-right: $padding + px !important;
+        }
+        .#{$class-prefix}pb-xl-#{$padding} {
+            padding-bottom: $padding + px !important;
+        }
+        .#{$class-prefix}pl-xl-#{$padding} {
+            padding-left: $padding + px !important;
+        }
+        .#{$class-prefix}px-xl-#{$padding} {
+            padding-left: $padding + px !important;
+            padding-right: $padding + px !important;
+        }
+        .#{$class-prefix}py-xl-#{$padding} {
+            padding-top: $padding + px !important;
+            padding-bottom: $padding + px !important;
+        }
+    }
+}

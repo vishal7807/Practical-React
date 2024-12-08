@@ -1,0 +1,58 @@
+@import "../mixins";
+@import "../variables";
+.btn-flex{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn {
+    font-size: 16px;
+    padding: 8px 20px;
+    font-family: var(--wp-font-inter-m);
+    @include border-radius(8px);
+    
+    &.#{$class-prefix}btn-outline-yellow {
+        border-color: var(--wp-theme-yellow);
+        background-color: transparent;
+        color: var(--wp-theme-text);
+       @extend .btn-flex;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            color: #fff;
+            border-color: var(--wp-theme-light-blue);
+            background-color: var(--wp-theme-light-blue);
+        }
+    }
+    &.#{$class-prefix}btn-yellow {
+        border-color: var(--wp-theme-yellow);
+        background-color: var(--wp-theme-yellow);
+        color: var(--wp-theme-text);
+       @extend .btn-flex;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            color: var(--wp-theme-text);
+            background-color: var(--wp-theme-yellow);
+            border-color: var(--wp-theme-yellow);
+        }
+    }
+    &.#{$class-prefix}btn-blue {
+        border-color: var(--wp-theme-light-blue);
+        background-color: var(--wp-theme-light-blue);
+        color: #fff;
+       @extend .btn-flex;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            color: #fff;
+            border-color: var(--wp-theme-light-blue);
+            background-color: var(--wp-theme-light-blue);
+        }
+    }
+  
+    
+}
